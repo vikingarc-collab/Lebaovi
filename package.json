@@ -1,7 +1,7 @@
 {
   "name": "vikcom-website",
   "version": "1.0.0",
-  "description": "Website công ty Vikcom - vikcom.vn",
+  "description": "Vikcom company website - vikcom.vn",
   "main": "server.js",
   "private": true,
   "scripts": {

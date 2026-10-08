@@ -287,3 +287,23 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .stat__num { font-size: 2rem; }
   .header__logo img { width: 130px; }
 }
+
+/* Leadership */
+.section--tight { padding: 72px 0; }
+.leader {
+  display: flex; align-items: center; gap: 48px; max-width: 920px; margin: 0 auto;
+  background: #fff; border-radius: 20px; padding: 44px 48px; box-shadow: var(--shadow);
+  border-left: 5px solid var(--accent);
+}
+.leader__avatar {
+  flex: 0 0 120px; height: 120px; border-radius: 50%; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-600)); color: #fff;
+  font-size: 2rem; font-weight: 800; letter-spacing: .05em;
+  box-shadow: 0 0 0 6px #fff, 0 0 0 8px var(--accent);
+}
+.leader__quote { margin: 0 0 18px; font-size: 1.15rem; font-style: italic; color: var(--navy-700); line-height: 1.6; }
+.leader__name { margin: 0; font-weight: 800; font-size: 1.2rem; color: var(--navy-800); }
+.leader__role { margin: 0; color: var(--muted); font-size: .95rem; }
+@media (max-width: 700px) {
+  .leader { flex-direction: column; text-align: center; padding: 32px 24px; gap: 24px; border-left: 0; border-top: 5px solid var(--accent); }
+}

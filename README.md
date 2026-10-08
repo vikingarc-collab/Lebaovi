@@ -31,10 +31,9 @@ Vào **Tên miền → vikcom.vn → Quản lý DNS** và thêm đúng các bả
 > Nếu DNS Mắt Bão không cho đặt CNAME ở `@` (domain gốc), hãy chuyển nameserver sang Cloudflare (miễn phí, hỗ trợ CNAME flattening) rồi tạo bản ghi ở đó, hoặc dùng tính năng chuyển hướng (URL forwarding) `vikcom.vn` → `https://www.vikcom.vn`.
 > Xoá các bản ghi A/CNAME cũ trùng host trước khi thêm. DNS có thể mất từ vài phút đến vài giờ để cập nhật; Railway tự cấp SSL khi xác minh xong.
 
-## Cần cập nhật trước khi chạy chính thức
+## Ghi chú nội dung
 
-Tìm và thay các thông tin tạm trong `index.html`:
-- Địa chỉ văn phòng: `[Cập nhật địa chỉ văn phòng]`
-- Hotline: `+84 (0) xxx xxx xxx` và `tel:+84000000000`
-- Email liên hệ (mặc định `contact@vikcom.vn`, cũng có trong `js/main.js`)
-- Các con số thống kê (100+ đối tác, 8+ nền tảng) nếu cần chính xác hơn
+- Nội dung website bằng tiếng Anh. CEO: Lê Bảo Vi. Trụ sở: 14/12 Thân Nhân Trung, Tân Bình, TP.HCM.
+- Email liên hệ `contact@vikcom.vn` (trong `index.html` và `js/main.js`) – cần tạo hộp thư này (vd. qua email hosting Mắt Bão hoặc Google Workspace/Zoho).
+- Các con số thống kê (100+ đối tác, 8+ nền tảng) và câu trích dẫn của CEO có thể chỉnh lại cho chính xác.
+- Chưa có số điện thoại; muốn thêm hotline thì bổ sung vào mục Contact trong `index.html`.

@@ -87,19 +87,19 @@
     });
 
     if (!valid) {
-      note.textContent = 'Vui lòng điền đầy đủ các trường bắt buộc (*) với thông tin hợp lệ.';
+      note.textContent = 'Please fill in all required fields (*) with valid information.';
       note.className = 'form__note is-error';
       return;
     }
 
     var d = new FormData(form);
-    var subject = 'Yêu cầu tư vấn: ' + d.get('service') + ' – ' + d.get('name');
+    var subject = 'Consultation request: ' + d.get('service') + ' – ' + d.get('name');
     var body = [
-      'Họ và tên: ' + d.get('name'),
-      'Công ty: ' + (d.get('company') || '-'),
+      'Full name: ' + d.get('name'),
+      'Company: ' + (d.get('company') || '-'),
       'Email: ' + d.get('email'),
-      'Số điện thoại: ' + (d.get('phone') || '-'),
-      'Dịch vụ quan tâm: ' + d.get('service'),
+      'Phone: ' + (d.get('phone') || '-'),
+      'Service of interest: ' + d.get('service'),
       '',
       d.get('message')
     ].join('\n');
@@ -108,7 +108,7 @@
       '?subject=' + encodeURIComponent(subject) +
       '&body=' + encodeURIComponent(body);
 
-    note.textContent = 'Cảm ơn bạn! Ứng dụng email sẽ mở để gửi yêu cầu tới ' + CONTACT_EMAIL + '.';
+    note.textContent = 'Thank you! Your email app will open to send your request to ' + CONTACT_EMAIL + '.';
     note.className = 'form__note is-success';
     form.reset();
   });
